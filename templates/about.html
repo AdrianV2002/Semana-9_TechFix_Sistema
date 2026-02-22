@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Acerca de - TechFix{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center mt-4">
+    <div class="col-md-8">
+        <div class="panel">
+            <h2 class="panel-header" style="color: var(--accent);">
+                <i class="bi bi-info-circle-fill"></i> Acerca de TechFix
+            </h2>
+            
+            <p class="fs-5 text-white" style="line-height: 1.7;">
+                <strong>TechFix</strong> es una plataforma web desarrollada para optimizar la administración y el seguimiento de equipos en talleres de soporte técnico.
+            </p>
+            
+            <p class="text-light mt-3" style="line-height: 1.7;">
+                Este proyecto nace de la aplicación práctica de conceptos de <strong class="text-white">Ingeniería de Sistemas</strong> y desarrollo web moderno utilizando el microframework Flask y el motor de plantillas Jinja2. Nuestro objetivo es ofrecer a los técnicos y clientes locales en Tena una herramienta ágil para visualizar el progreso de las reparaciones en tiempo real.
+            </p>
+            
+            <div class="mt-5 text-center p-4" style="background: rgba(0, 210, 255, 0.05); border-radius: 15px; border: 1px solid var(--border);">
+                <p class="text-muted mb-4"><i class="bi bi-code-slash"></i> Desarrollado como parte del proyecto de la Semana 10.</p>
+                <a href="{{ url_for('home') }}" class="btn-custom">
+                    <i class="bi bi-house-door"></i> Ir al sistema
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
